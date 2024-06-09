@@ -1,0 +1,21 @@
+.button-2 {
+  color: #fff;
+  /* border: 3px solid #c266d3; */
+  background-image: -webkit-linear-gradient(
+    20deg,
+    #FF5F00 90%,
+    transparent 50%
+  ) !important ; 
+  background-image: linear-gradient(30deg, #FF5F00 50%, transparent 50%);
+  background-size: 600px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+  border: none;
+}
+.button-2:hover {
+  background-position: 100%;
+  color: #FF5F00 !important;
+  border: 1px solid #FF5F00 !important;
+}
