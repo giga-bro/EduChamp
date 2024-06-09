@@ -57,20 +57,44 @@
 
 ### Installation :
 ```bash
-   git clone https://github.com/Aditya-Sakpal/GIGA_CHAT_FRONTEND.git
+   git clone https://github.com/Aditya-Sakpal/EduChamp.git
+```
+```
+Place all the .env values by creating .env files in frontend and backend folder
+
+Env values for backend :-
+
+PORT=PORT_NUMBER
+MONGO_URI=MONGO-URI
+JWT_SECRET=JWT_SECRET
+NODE_MAILER_SECRET=NODE MAILER SECRET
+OPEN_AI_KEY1=OPEN_AI_KEY1
+OPEN_AI_KEY2=OPEN_AI_KEY2
+OPEN_AI_KEY3=OPEN_AI_KEY3
+OPEN_AI_KEY4=OPEN_AI_KEY4
+
+Env values for frontend :-
+
+VITE_GOOGLE_CLIENT_SECRET=VITE_GOOGLE_CLIENT_SECRET
+VITE_GOOGLE_CLIENT_ID=VITE_GOOGLE_CLIENT_ID
+VITE_APP_FIREBASE_API_KEY=VITE_APP_FIREBASE_API_KEY
+VITE_APP_FIREBASE_AUTH_DOMAIN=VITE_APP_FIREBASE_AUTH_DOMAIN
+VITE_APP_FIREBASE_PROJECT_ID=VITE_APP_FIREBASE_PROJECT_ID
+VITE_APP_FIREBASE_STORAGE_BUCKET=VITE_APP_FIREBASE_STORAGE_BUCKET
+VITE_APP_FIREBASE_MESSAGING_SENDER_ID=VITE_APP_FIREBASE_MESSAGING_SENDER_ID
+VITE_APP_FIREBASE_APP_ID=VITE_APP_FIREBASE_APP_ID
+VITE_APP_FIREBASE_MEASUREMENT_ID=VITE_APP_FIREBASE_MEASUREMENT_ID
 ```
 ```bash
-   npm i && cd apps/frontend
+   cd frontend && npm i && npm run dev
 ```
 ```bash
-   npm i && cd ../../apps/backend
+   Open another terminal
 ```
 ```bash
-   npm i && cd ../../
+  cd backend && npm i && npm run dev
 ```
 ```bash
    npm run dev
 ```
-### Video Demo :
-https://github.com/Aditya-Sakpal/GIGA_CHAT_FRONTEND/assets/112710558/3884b85f-785e-447a-9409-df8dcad906eb
 
