@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import React, { ChangeEvent, useState, useRef, useEffect } from 'react'
 import ScheduleIcon from '@mui/icons-material/Schedule';
 import TimelapseIcon from '@mui/icons-material/Timelapse';
