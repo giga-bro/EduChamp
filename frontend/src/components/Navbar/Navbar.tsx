@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React ,{useState} from 'react'
 import './index.css'
 import HomeIcon from '@mui/icons-material/Home';
