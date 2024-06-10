@@ -28,7 +28,7 @@ const Profile: React.FC = () => {
                     localStorage.setItem('bio', value)
 
                     try {
-                        const res = await axios.post('http://localhost:5000/api/editDetails/editBio', { username: localStorage.getItem('username'), bio: value }, { headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${localStorage.getItem('token')}` } })
+                        const res = await axios.post('https://educhamp.onrender.com/api/editDetails/editBio', { username: localStorage.getItem('username'), bio: value }, { headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${localStorage.getItem('token')}` } })
                         if (res.status === 200) {
                             Swal.fire('Saved!', '', 'success')
                             setBio(value)
@@ -77,7 +77,7 @@ const Profile: React.FC = () => {
         try {
             const fileURL = await getFileURL(file)
 
-            const res = await axios.post('http://localhost:5000/api/editDetails/editProfilePic', { username: localStorage.getItem('username'), profilePicPath: fileURL }, { headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${localStorage.getItem('token')}` } })
+            const res = await axios.post('https://educhamp.onrender.com/api/editDetails/editProfilePic', { username: localStorage.getItem('username'), profilePicPath: fileURL }, { headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${localStorage.getItem('token')}` } })
             if (res.status === 200) {
                 Swal.fire('Saved!', '', 'success')
                 setProfilePic(fileURL)
@@ -98,7 +98,7 @@ const Profile: React.FC = () => {
         try {
             const fileURL = await getFileURL(file)
 
-            const res = await axios.post('http://localhost:5000/api/editDetails/editBackgroundPic', { username: localStorage.getItem('username'), backgroundPicPath: fileURL }, { headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${localStorage.getItem('token')}` } })
+            const res = await axios.post('https://educhamp.onrender.com/api/editDetails/editBackgroundPic', { username: localStorage.getItem('username'), backgroundPicPath: fileURL }, { headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${localStorage.getItem('token')}` } })
             if (res.status === 200) {
                 Swal.fire('Saved!', '', 'success')
                 setBackgroundPic(fileURL)
