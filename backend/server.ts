@@ -22,7 +22,7 @@ mongoose.connect(MONGO_URI, {
 });
 
 app.use((req, res, next) => {
-  if (req.path.startsWith('/api/auth') || req.path.startsWith('/api/editDetails/enterDetails') ) {
+  if (req.path.startsWith('/api/auth') || req.path.startsWith('/api/editDetails/enterDetails') || req.path.startsWith('/') ) {
     return next();
   }
   protect(req, res, next);
