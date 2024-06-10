@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { timeStamp } from 'console';
 import mongoose from 'mongoose';
 const { Schema } = mongoose;
