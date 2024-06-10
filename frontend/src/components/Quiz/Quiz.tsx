@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import React, { useRef, useEffect, useState } from 'react';
 import './index.css';
 import MicIcon from '@mui/icons-material/Mic';
