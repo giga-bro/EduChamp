@@ -24,7 +24,7 @@ const SignIn: React.FC = () => {
             return
         }
         try {
-            const res = await axios('http://localhost:5000/api/auth/login', { method: 'POST', data: { email, password } })
+            const res = await axios('https://educhamp.onrender.com/api/auth/login', { method: 'POST', data: { email, password } })
             if (res.status === 200) {
                 Swal.fire({
                     icon: 'success',
