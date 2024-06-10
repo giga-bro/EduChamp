@@ -53,7 +53,7 @@ const SignUp: React.FC = () => {
             }
             try {
                 setLoading(true)
-                const res = await axios('http://localhost:5000/api/auth/register', { method: 'POST', data: { email, password, username, name } })
+                const res = await axios('https://educhamp.onrender.com/api/auth/register', { method: 'POST', data: { email, password, username, name } })
                 if (res.status === 201) {
                     const Toast = Swal.mixin({
                         toast: true,
@@ -101,7 +101,7 @@ const SignUp: React.FC = () => {
         } else {
             try {
                 setLoading(true)
-                const res = await axios('http://localhost:5000/api/auth/register', { method: 'POST', data: { email, password, enteredVerificationCode, hashedVerificationCode, username, name } })
+                const res = await axios('https://educhamp.onrender.com/api/auth/register', { method: 'POST', data: { email, password, enteredVerificationCode, hashedVerificationCode, username, name } })
                 if (res.status === 200) {
                     Swal.fire({
                         icon: "success",
@@ -259,7 +259,7 @@ export const GoogleButton = () => {
                         localStorage.setItem('username', value);
 
                         try {
-                            const res = await axios.post('http://localhost:5000/api/editDetails/enterDetails',
+                            const res = await axios.post('https://educhamp.onrender.com/api/editDetails/enterDetails',
                                 {
                                     email: localStorage.getItem('email'),
                                     name: localStorage.getItem('name'),
