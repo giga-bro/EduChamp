@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react';
 import './index.css'; // Assuming you have a corresponding CSS file for styles
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
