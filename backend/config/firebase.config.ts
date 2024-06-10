@@ -1,5 +1,4 @@
 // @ts-nocheck
-require('dotenv').config();
 
 export default {
     firebaseConfig: {
