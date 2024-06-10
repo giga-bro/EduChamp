@@ -1,4 +1,5 @@
-// backend/routes/auth.js
+// @ts-nocheck
+
 const express = require('express');
 const { registerUser,loginUser } = require('../controllers/authController');
 
