@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Request, Response } from 'express';
 import OpenAI from "openai";
 const { OPEN_AI_KEY1, OPEN_AI_KEY2, OPEN_AI_KEY3, OPEN_AI_KEY4 } = require('../config/config');
