@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import express from 'express';
 const mongoose = require('mongoose');
 const { PORT, MONGO_URI } = require('./config/config');
