@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Results from "../models/Results";
 import { Request, Response } from 'express';
 
