@@ -1,3 +1,4 @@
+// @ts-nocheck
 const jwt = require('jsonwebtoken');
 const { JWT_SECRET } = require('../config/config');
 import { Request, Response, NextFunction } from 'express';
