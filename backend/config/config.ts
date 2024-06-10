@@ -1,4 +1,4 @@
-// backend/config.js
+// @ts-nocheck
 require('dotenv').config();
 
 module.exports = {
