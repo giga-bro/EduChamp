@@ -169,7 +169,7 @@ const Quiz = () => {
 
     try {
       console.log(score,testId);
-      const res = await axios.post('http://localhost:5000/api/results/storeResults',{ 
+      const res = await axios.post('https://educhamp.onrender.com/api/results/storeResults',{ 
         username: localStorage.getItem('username'),
         testId:testId,
         score: score,
