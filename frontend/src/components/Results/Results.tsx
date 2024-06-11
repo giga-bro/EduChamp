@@ -13,7 +13,7 @@ const Results: React.FC = () => {
 
     const fetchRestuls = async () => {
         try {
-            const response = await axios.post('https://educhamp.onrender.com/api/results/getResults', {
+            const response = await axios.post('https://edu-champ-backend.vercel.app/api/results/getResults', {
                 username: localStorage.getItem('username')
             }, {
                 headers: {
