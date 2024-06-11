@@ -111,7 +111,7 @@ export const GoogleButton = () => {
     });
     return (
         <a className="social-icon lg:!px-[20%] px-[15%] " id="googleIcon" onClick={() => signIn()}  >
-            <p className='font-bold text-xs  lg:text-sm flex text-center lg:text-center justify-end items-center  lg:w-[100%] lg:mr-[5%] lg:mb-[2%] lg:border-black w-[90%] ' >Login with Google</p><i className="fab fa-google  " />
+            <p className='font-bold text-xs  lg:text-sm flex text-center lg:text-center justify-end items-center  lg:w-[100%] lg:mr-[5%] lg:mb-[2%] lg:border-black w-[90%]  mr-[10%]  ' >Login with Google</p><i className="fab fa-google  " />
         </a>
     );
 }
