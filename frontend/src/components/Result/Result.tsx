@@ -32,7 +32,7 @@ const Result: React.FC = () => {
         setChats(prevChats => [...prevChats, { isSender: true, message: query }]);
         setQuery('')
         try {
-            const res = await axios.post('http://localhost:5000/api/query/query', { message: query }, { headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${localStorage.getItem('token')}` } })
+            const res = await axios.post('https://edu-champ-backend.vercel.app/api/query/query', { message: query }, { headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${localStorage.getItem('token')}` } })
             if (res.status === 200) {
                 setChats(prevChats => [...prevChats, { isSender: false, message: res.data.message }]);
             } else if (res.status === 500) {
